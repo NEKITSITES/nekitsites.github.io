@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMU Studio</title>
+    <meta name="description" content="Створюємо сучасні, зручні та дизайнерські веб-сайти та веб-додатки.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="ambient-background" aria-hidden="true"></div>
+
+    <header id="header" class="header-wrapper">
+        <div class="glass-container header-content">
+            <a class="navbar-brand" href="#" aria-label="LUMU Studio Home">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <rect width="40" height="40" rx="12" fill="white"/>
+                    <path d="M12 28V12L28 28V12" stroke="#4c1d95" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="brand-text">LUMU</span>
+            </a>
+            
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only">Меню</span>
+                <div class="hamburger" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+
+            <nav class="primary-navigation" id="primary-navigation" data-visible="false">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active">Головна</a></li>
+                    <li><a href="#studio" class="nav-link">Про нас</a></li>
+                    <li><a href="#services" class="nav-link">Проєкти</a></li>
+                </ul>
+                 <a class="btn btn-primary header-cta" href="#contact">Зв'язатися</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="section-hero">
+            <div class="container hero-container">
+                <h1 class="hero-title text-gradient reveal-on-scroll">Привіт! Ми - LUMU Studio</h1>
+                <p class="hero-lead reveal-on-scroll" style="--reveal-delay: 0.1s;">Ми створюємо сучасні та зручні цифрові продукти.</p>
+                <div class="hero-actions reveal-on-scroll" style="--reveal-delay: 0.2s;">
+                    <a class="btn btn-primary" href="#services">Дивитись роботи</a>
+                    <a class="btn btn-outline" href="#studio">Хто ми</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="studio" class="section-about">
+            <div class="container">
+                <div class="section-header reveal-on-scroll">
+                    <h2 class="section-title text-gradient">Про студію</h2>
+                    <p class="section-subtitle">HTML, CSS, JavaScript, React, TypeScript</p>
+                </div>
+                
+                <div class="about-grid-layout">
+                    <article class="glass-card about-main reveal-on-scroll">
+                        <div class="about-image-wrapper">
+                            <img src="" 
+                                 width="800" height="450" 
+                                 loading="lazy">
+                        </div>
+                        <div class="about-content">
+                            <h3>Lumu Studio</h3>
+                            <p>Ми команда front-end розробників, що спеціалізується на створенні сучасних веб-додатків у будь-якій сфері.</p>
+                        </div>
+                    </article>
+
+                    <div class="services-grid">
+                        <article class="glass-card service-card reveal-on-scroll" style="--reveal-delay: 0.1s;">
+                            <div class="service-icon"></div>
+                            <h3>UI/UX Дизайн</h3>
+                            <p>Продумані інтерфейси, що виглядають красиво.</p>
+                        </article>
+                        <article class="glass-card service-card reveal-on-scroll" style="--reveal-delay: 0.2s;">
+                            <div class="service-icon"></div>
+                            <h3>Веб-додатки</h3>
+                            <p>Різноманітні додатки для вашого бізнесу.</p>
+                        </article>
+                        <article class="glass-card service-card reveal-on-scroll" style="--reveal-delay: 0.3s;">
+                            <div class="service-icon"></div>
+                            <h3>Брендинг</h3>
+                            <p>Візуальна айдентика, що виділяє та підсилює довіру.</p>
+                        </article>
+                        <article class="glass-card service-card reveal-on-scroll" style="--reveal-delay: 0.4s;">
+                            <div class="service-icon"></div>
+                            <h3>Аналітика</h3>
+                            <p>Підключаємо метрики для перевірки гіпотез.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section-projects">
+            <div class="container">
+                <div class="section-header reveal-on-scroll">
+                    <h2 class="section-title text-gradient">Наші проєкти</h2>
+                    <p class="section-subtitle">Результати нашої роботи</p>
+                </div>
+                <div class="projects-grid">
+                    <article class="glass-card project-card reveal-on-scroll">
+                        <div class="project-image">
+                             <img src="" 
+                                  width="600" height="400"
+                                  loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h3>Сайт гуртка 'SoftEng Research Hub'</h3>
+                            <p>Неофіційний сайт для університетського гуртка..</p>
+                            <ul class="tags">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="glass-card project-card reveal-on-scroll" style="--reveal-delay: 0.1s;">
+                        <div class="project-image">
+                            <img src="" 
+                                 width="600" height="400"
+                                 loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h3>FinTech Дашборд</h3>
+                            <p>Аналітична панель для управління фінансовими активами.</p>
+                            <ul class="tags">
+                                <li>Vue.js</li>
+                                <li>D3.js</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="glass-card project-card reveal-on-scroll" style="--reveal-delay: 0.2s;">
+                        <div class="project-image">
+                             <img src=""  
+                                  width="600" height="400"
+                                  loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h3>Riviera Aquapark</h3>
+                            <p>Веб-сайт аквапарку в Ірпені.</p>
+                             <ul class="tags">`
+                                <li>HTML</li>
+                                <li>CSS</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="footer">
+        <d class="container footer-content">
+            <div class="footer-brand">
+                <span class="brand-text">LUMU</span>
+            </div>
+            <div class="footer-links">
+                <a href="#hero">Головна</a>
+                <a href="#studio">Про нас</a>
+                <a href="#services">Проєкти</a>
+            </div>
+    
+        </div>
+        <div class="container copyright">
+            <small>2025 LUMU Studio</small>
+        </div>
+    </footer>
+    
+    <script src="index.js" defer></script>
+</body>
+</html>
